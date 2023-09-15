@@ -24,12 +24,12 @@
     src: url("../fonts/gilroy-regular.ttf");
     font-style: normal;
     font-weight: 400;
-  }
+ }
 
-/*  {
+* {
     margin: 0;
     padding: 0;
-} */
+}
 
 header {
     display: flex;
@@ -73,7 +73,6 @@ header {
 .home-post {
     margin-top: 84px;
     display: flex;
-    /* gap: 41px */
     align-content: space-between;
 }
 
@@ -146,29 +145,20 @@ header {
     justify-content: center;
     gap: 20px;
     align-content: center;
-    /* flex-wrap: wrap; */
     width: calc(100% - 359px * 2);
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .layer-choice {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 381px;
-    /* height: 291px; */
     border: 1px solid black;
-}
-
-.layer-choice .icon {
-    margin-left: 30px;
-    margin-top: 40px;
+    padding: 40px 30px 30px 40px;
 }
 
 .layer-choice .title {
-    margin-left: 29px;
     margin-top: 25px;
-    margin-right: 42px;
     color: #000;
     font-family: Gilroy-Bold;
     font-size: 24px;
@@ -179,8 +169,6 @@ header {
 
 .desc-choice {
     margin-top: 17px;
-    margin-left: 29px;
-    margin-right: 42px;
     color: #666;
     font-family: Gilroy-Regular;
     font-size: 15px;
@@ -190,7 +178,7 @@ header {
 }
 
 .read-more {
-    margin: 25px 29px;
+    margin-top: 25px;
     text-decoration: none;
     display: inline-block;
     color: #000;
@@ -210,7 +198,6 @@ header {
 }
 
 .why-title {
-    /* margin-top: 92px; */
     color: #000;
     font-family: Gilroy-Bold;
     font-size: 45px;
@@ -228,7 +215,7 @@ header {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
 }
 
 .layer-services {
@@ -239,7 +226,8 @@ header {
     align-items: center;
     gap: 36px;
     width: 1440px;
-    margin-bottom: 57px;
+    padding-top: 24px;
+    padding-bottom: 43px;
 }
 
 .card-service {
@@ -247,11 +235,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
-    margin-bottom: 43px;
     border: 1px solid black;
     width: 370px;
-    /* height: 510px; */
+    padding-bottom: 50px;
 }
 
 .img-service {
@@ -277,12 +263,11 @@ header {
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 22.5px */
+    line-height: 150%;
 }
 
 .crd-service-btn {
     margin-top: 39px;
-    margin-bottom: 50px;
     background-color: #F25822;
     border-radius: 50px;
     border-width: 0;
@@ -294,9 +279,13 @@ header {
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 19.5px */
+    line-height: 150%;
 }
 
 .lm-msg {
     margin-left: 20px;
+}
+
+body {
+    padding-bottom: 100px;
 }
