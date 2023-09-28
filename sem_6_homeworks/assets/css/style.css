@@ -57,6 +57,7 @@
     font-size: 16px;
     font-weight: 400;
 }
+
 .font-medium-smaller {
     font-size: 14px;
     font-weight: 400;
@@ -79,6 +80,7 @@
 .txt-clr-light-black {
     color: #222222
 }
+
 .txt-clr-pink {
     color: #F16D7F
 }
@@ -111,13 +113,23 @@
 
 .header__left-block {
     display: flex;
+    align-items: center;
     gap: 41px;
     align-items: end;
 }
 
 .header__right-block {
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    align-items: flex-end;
+}
+
+.header-icon {
+    fill: #e8e8e8;
+}
+
+.header-icon:hover {
+    fill: #2d96f8;
 }
 
 /* настройки отображения бренда */
@@ -125,8 +137,8 @@
 .our-brand-demo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-content: center;
-    justify-content: center;
+    /* align-content: center; */
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -140,7 +152,7 @@
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
     margin-left: 64px;
-    margin-bottom: 91px;
+    /* margin-bottom: 91px; */
 }
 
 /* Настройки секции категорий */
@@ -163,10 +175,10 @@
 
 .absolute-central {
     position: absolute;
-    margin: 0;
+    /* margin: 0; */
     top: 50%;
     left: 50%;
-    margin-right: -50%;
+    /* margin-right: -50%; */
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -206,9 +218,58 @@
 
 .btn-all-product {
     margin-top: 48px;
-    width: 212px;
-    height: 48px;
     background-color: #FFFFFF;
     border: none;
     border: 1px solid #F26376;
+    padding: 15px 39px;
+}
+
+.btn-all-product:hover {
+    background-color: #F26376;
+    color: #FFFFFF;
+}
+
+.card-img-layout {
+    position: relative;
+}
+
+.card-img-layout:hover {
+    .card-item-to-cart {
+        display: inline;
+    }
+}
+
+.card-item-img {
+    z-index: 1;
+}
+
+.card-item-to-cart {
+    display: none;
+    background-color: #5D5D5D;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    border: none;
+    background:none;
+    border: 1px solid #FFFFFF;
+    padding: 11px 16px 9px 14px;
+    color: #FFFFFF;
+}
+
+.btn-to-cart-layout {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
