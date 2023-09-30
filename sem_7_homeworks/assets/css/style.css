@@ -312,6 +312,7 @@ header__right-block__main-menu, .main-menu__title {
 }
 
 .card-item-img {
+    width: 100%;
     z-index: 1;
 }
 
@@ -347,9 +348,10 @@ header__right-block__main-menu, .main-menu__title {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .center {
-        max-width: 768px;
+        max-width: 1024px;
+        min-width: 768px;
     }
 
     .header {
@@ -358,7 +360,8 @@ header__right-block__main-menu, .main-menu__title {
     }
 
     .more-width {
-        max-width: 768px;
+        max-width: 1024px;
+        min-width: 768px;
     }
 
     .font-big-bold {
