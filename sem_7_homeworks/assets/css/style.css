@@ -158,7 +158,7 @@ a {
     top: 75px;
     right: 0;
     background-color: #FFFFFF;
-    box-shadow: -7px 7px 5px 5px #F1E4E6;
+    /* box-shadow: -7px 7px 5px 5px #F1E4E6; */
     padding: 32px 0 32px 33px;
     width: 199px;
     z-index: 10;
@@ -350,7 +350,8 @@ header__right-block__main-menu, .main-menu__title {
 
 @media screen and (max-width: 1024px) {
     .center {
-        max-width: 1024px;
+        /* max-width: 1024px; */
+        max-width: none;
         min-width: 768px;
     }
 
