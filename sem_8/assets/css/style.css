@@ -76,3 +76,8 @@
 label:active:after {
     width: 750px;
 }
+
+.registration__title, .some-section__title {
+    color: chocolate;
+    font-weight: bold;
+}
